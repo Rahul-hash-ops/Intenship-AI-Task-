@@ -1,0 +1,15 @@
+movies = {
+    "Action": ["Marco", "Leo", "Red"],
+    "Comedy": ["Soodu Kavum", "Winner", "Friends"],
+    "Drama": ["Titanic", "Tourist Family", "Remo"]
+}
+
+print("Available Categories: Action, Comedy, Drama")
+choice = input("Enter your favorite category: ").title()
+
+if choice in movies:
+    print("\nRecommended Movies:")
+    for m in movies[choice]:
+        print("-", m)
+else:
+    print("Category not found.")
